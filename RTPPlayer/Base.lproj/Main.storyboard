@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoStream" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qa6-jQ-77O">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-0K-oFR">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PfX-0K-oFR" firstAttribute="top" secondItem="F9l-2X-FGh" secondAttribute="top" id="Q5a-eh-mgL"/>
+                            <constraint firstItem="PfX-0K-oFR" firstAttribute="bottom" secondItem="F9l-2X-FGh" secondAttribute="bottom" id="T6X-7j-wN1"/>
+                            <constraint firstItem="PfX-0K-oFR" firstAttribute="trailing" secondItem="F9l-2X-FGh" secondAttribute="trailing" id="gvt-jp-vWg"/>
+                            <constraint firstItem="PfX-0K-oFR" firstAttribute="leading" secondItem="qa6-jQ-77O" secondAttribute="leading" id="krF-ue-dFW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F9l-2X-FGh"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerContainer" destination="PfX-0K-oFR" id="00H-o0-5CJ"/>
+                        <outlet property="view" destination="qa6-jQ-77O" id="gu0-eC-Per"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.733133433283363" y="85.599999999999994"/>
+        </scene>
+    </scenes>
+</document>
