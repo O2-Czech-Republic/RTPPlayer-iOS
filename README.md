@@ -40,7 +40,7 @@ This enables the traversal of NATs along the way but the client must be able to 
 Due to the connectionless nature of UDP, the server also expects to receive a heartbeat packet every once in a while to know that the client is still there.
 
 #### HTTP progressive download
-The app performs an HTTP `GET` request to a remote server that responds with `Transfer-Encoding: chunked` in response header (and `Content-Length` unset) and streams the RTP packets in the request body. 
+The app performs an HTTP `GET` request to a remote server that responds with `Transfer-Encoding: chunked` in response header (and `Content-Length` unset) and streams the RTP packets in the response body. 
 
 ```
 GET /streams/1234567 HTTP/1.1
